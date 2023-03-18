@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import HttpResponse
 
 from phars_app.models import Product, Category
 
