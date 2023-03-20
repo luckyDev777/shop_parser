@@ -21,6 +21,20 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ python3 manage.py migrate
 
+<i>запускаем файл categories.py для получения словаря в формате json в котором будет спиисок 
+словарей</i>
+<i>
+Словарь будет выглядит примерно так:
+{'https://shop.kz/bloki-pitaniya/': 10}
+{'https://shop.kz/korpusa/': 9}
+{'https://shop.kz/kulery-dlya-protsessora/': 8}
+{'https://shop.kz/vodyanoe-okhlazhdenie/': 4}
+{'https://shop.kz/termopasta/': 1}
+.....
+где {"url страницы товара': 'максимальное число страниц'}
+</i>
+$ python phars_shop/phars_shop/product_total_page.py
+
 <i>Запускаем django, для остановки Ctrl + C</i>
 $ ./manage.py runserver 
 
