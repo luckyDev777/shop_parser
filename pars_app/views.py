@@ -1,8 +1,8 @@
 from django.shortcuts import HttpResponse
 
-from phars_app.models import Product, Category
+from pars_app.models import Product, Category
 
-from phars_app.parse_shop.parse_products import pars
+from pars_app.parse_shop.parse_products import pars
 
 def hi(request):
     return HttpResponse('Привет. Для обновления базы нажми <a href="/update">сюда</a>.')

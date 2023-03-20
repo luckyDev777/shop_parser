@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 
-from phars_app.views import update, hi
+from pars_app.views import update, hi
 
 
 urlpatterns = [

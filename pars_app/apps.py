@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PharsAppConfig(AppConfig):
+class ParsAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'phars_app'
+    name = 'pars_app'
