@@ -21,8 +21,8 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ python3 manage.py migrate
 
-<i>запускаем файл categories.py для получения словаря в формате json в котором будет спиисок 
-словарей</i>
+<i>запускаем файл product_total_page.py для получения список 
+словарей в формате json</i>
 <i>
 Словарь будет выглядит примерно так:
 {'https://shop.kz/bloki-pitaniya/': 10}
