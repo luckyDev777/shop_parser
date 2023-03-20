@@ -28,6 +28,11 @@ def get_response(url, headers, datas:list):
                 'photo_urls': image_url
             }
             datas.append(data)
+            # Записываем данные в файл в формате JSON
+            if not os.path.isdir("data_json"):
+                os.mkdir("data_json")
+            with open(f'data_json/{category}.json', 'a', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
         except Exception as e:
             print(f'Произошла ошибка при парсинге товара: {e}\nurl: {url}')
     return datas
@@ -39,7 +44,7 @@ def pars():
     }
     query = '?PAGEN_1='
     app_dir = os.path.join('phars_app', 'parse_shop')
-    filename = 'categories_short.json'
+    filename = 'categories.json'
     datas = []
 
     with open(os.path.join(os.getcwd(), app_dir, filename), encoding='utf-8') as file:

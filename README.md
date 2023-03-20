@@ -58,3 +58,10 @@ https://shop.kz/smart-chasy/?PAGEN_1=5
 https://shop.kz/smart-chasy/?PAGEN_1=6
         Finished
 </pre>
+
+<i>В каталоге data_json будут храниться файлы json по категориям</i>
+<i>После отработки скрипта parse_products.py, надо создать суперпользователя djnago командой</i>
+$ python3 manage.py createsuperuser
+
+<i>далее надо зайти в админку django и там увидим записанные данные в БД</i>
+
