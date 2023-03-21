@@ -6,7 +6,7 @@ main_url = 'https://shop.kz'
 headers={
 "User-Agent" : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
 }
-response = requests.get(main_url, headers=headers).text
+
 
 
 def get_category_url_list() -> list:
@@ -19,6 +19,7 @@ def get_category_url_list() -> list:
     https://shop.kz/planshety/
     таких страниц должно получится примерно - 305
     """
+    response = requests.get(main_url, headers=headers).text
     catalog_list = []
     soup = BeautifulSoup(response, 'html.parser')
     div_classes = soup.find_all('div', attrs={'class': 'bx-nav-2-lvl-container'})
