@@ -1,6 +1,6 @@
-### Выполненное тестовое задание"
+### Парсер в связке Django + requests(with module threading)"
 
-Задание реализовал в виде django приложения <pars_app> внути которого расположена директория parse_shop 
+реализовал в виде django приложения <pars_app> внути которого расположена директория parse_shop 
 В ней хранится основная логика парсера сайта shop.kz
 
 В файле views.py в контроллере update вызываем функцию pars()
@@ -40,7 +40,7 @@ $ python3 manage.py migrate
 $ python phars_shop/phars_shop/product_total_page.py
 
 <i>Запускаем django, для остановки Ctrl + C</i>
-$ ./manage.py runserver 
+$ ./manage.py runserver (или через докер)
 
 <i>Открываем http://127.0.0.1:8000/ и видим "привет, для обновления базы нажмите сюда(ссылка)"</i>
 <i>после нажатия запускается скрипт парсера parse_products.py</i>
